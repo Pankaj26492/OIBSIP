@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/172277/pexels-photo-172277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	backface-visibility: 0.1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	color: black;
+	font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: arial, sans-serif;
+}
+
+.title{
+	color:black;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inputDiv input:hover
+{
+	border:5px solid red;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+	font-weight: bolder;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color:green;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+	border: 2px solid black;
+}
+
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	background-color: white;
+	border-bottom: 4px solid green;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color:black;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color:blue;
+	font-size: 1.4rem;
+	font-family: Arial, Helvetica, sans-serif, sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: red;
+	font-size: 1.4rem;
+	font-family: arial, sans-serif;
+	cursor: pointer;
+}
