@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+div
+{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+form 
+{
+    height:500px;
+    width:500px;
+    border:2px solid black;
+    border-radius: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+label
+{
+    font-size: 20px;
+    color:white;
+
+    
+}
+input 
+{
+    width:300px;
+    height:30px;
+    border:2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+}
+input:hover 
+{
+    border:2px solid green;
+    text-align: start;
+}
+button
+{
+    width:80px;
+    height:30px;
+    border:2px solid green;
+    background-color: green;
+    border-radius: 10px;
+    font-weight: bolder;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div>
+      <h1><--- Registration Form ---></h1>
+      
+    <form action="/register" method="POST">
+        <label>UserName</label>
+        <input
+          type="text"
+          name="uname"
+          class="uname"
+          placeholder="name"
+          autocomplete="off"
+        ><br>
+        <label>Phone Number</label><br>
+        <input
+          type="text"
+          name="phone"
+          class="uphone"
+          placeholder="digit"
+          autocomplete="off"
+        ><br>
+        <label>Password</label>
+        <input
+          type="password"
+          name="password"
+          class="upass"
+          placeholder="enter password"
+          autocomplete="off"
+        ><br>
+          <button>Submit</button>
+    </form>
+    </div>
+</body>
+</html>
